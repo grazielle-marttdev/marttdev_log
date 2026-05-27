@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarttDev log_ — feed de aprendizado</title>
+
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/entries-grid.css">
+    <link rel="stylesheet" href="styles/toolbar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body data-page="feed">
+    <header class="header">
+        <div class="logo">
+            <img src="assets/logo-img.png" alt="Imagem de rosas vermelhas">
+            <a href="/index.html">Marttdev log<span>_</span></a>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li data-link="feed"><a href="/index.html">feed</a></li>
+                <li data-link="about"><a href="/sobre.html">sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">// Documentando o processo</p>
+
+            <h1>cada dia, uma coisa nova.</h1>
+            <p>Um diário público de desenvolvimento web. O intuito é registrar algo que aprendi todos os dias — por menor que seja. É um hábito que estou cultivando para fortalecer minha base e documentar minha evolução.</p>
+        </section>
+
+        <div class="toolbar">
+            <input type="text" class="search-input" id="search-input" placeholder="buscar por título, tag ou palavra-chave...">
+            <div class="tags-container">
+                <button class="chip active" >todas</button>
+                <button class="chip " >CSS</button>
+                <button class="chip " >HTML</button>
+                <button class="chip " >JavaScript</button>
+            </div>
+        </div>
+
+        <div class="entries-grid" id="entries-container"></div>
+    </main>
+
+    <footer>
+        <span>MarttDev log_</span>
+        <span>V0.1 · MVP </span>>
+    </footer>
+    
+    <script src="scripts/api.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+
+
+<!-- c0rtan4_2026 -->
