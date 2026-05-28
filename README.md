@@ -63,4 +63,4 @@ Para este projeto, priorizei a simplicidade e a eficiência:
 
 ---
 
-Feito com 🌹 e dedicação por [Grazielle](https://github.com/seu-usuario). 
+Feito com 🌹 e dedicação por [Grazielle](https://github.com/grazielle-marttdev). 
