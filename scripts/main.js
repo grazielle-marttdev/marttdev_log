@@ -2,7 +2,7 @@ async function initFeed() {
     const entries = await getEntries();
     renderCards(entries);
     setupSearch(entries);
-    setupChips(entries);
+    setupFilter(entries);
 }
 
 function renderCards(entries) {
@@ -23,8 +23,11 @@ function renderCards(entries) {
 
 function setupSearch(entries) {
     const searchInput = document.getElementById('search-input');
+    const selectElement = document.getElementById('tag-filter');
 
     searchInput.addEventListener('input', () => {
+        if (selectElement) selectElement.value = 'todas';
+
         const term = searchInput.value.toLowerCase().trim();
 
         const filtered = entries.filter(entry => 
@@ -36,28 +39,32 @@ function setupSearch(entries) {
     });
 }
 
-function setupChips(entries) {
-    const chips = document.querySelectorAll('.chip');
+function setupFilter(entries) {
+    const selectElement = document.getElementById('tag-filter');
 
-    chips.forEach(chip => {
-        chip.addEventListener('click', () => {
-            chips.forEach(c => c.classList.remove('active'));
-            chip.classList.add('active');
+    const allTags = entries.flatMap(entry => entry.tags);
+    const uniqueTags = [...new Set(allTags)].sort();
 
-            const category = chip.innerHTML.toLocaleLowerCase().trim();
-
-            if (category === 'todas') {
-                renderCards(entries);
-            } else {
-                const filtered = entries.filter(entry => 
-                    entry.tags.some(tag => tag.toLowerCase() === category)
-                );
-                renderCards(filtered);
-            }
-
-            document.getElementById('search-input').value = '';
-        })
+    selectElement.innerHTML = `<option value="todas">Todas as categorias</option>`;
+    uniqueTags.forEach(tag => {
+        const option = document.createElement('option');
+        option.value = tag.toLowerCase();
+        option.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
+        selectElement.appendChild(option);
     })
+    
+    selectElement.addEventListener('change', () => {
+        const category = selectElement.value.toLowerCase();
+
+        if (category === 'todas') {
+            renderCards(entries);
+        } else {
+            const filtered = entries.filter(entry => 
+                entry.tags.some(tag => tag.toLowerCase() === category)
+            );
+            renderCards(filtered);
+        }
+    });
 }
 
 initFeed();

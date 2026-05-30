@@ -1,6 +1,6 @@
 .toolbar {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 0.75rem;
     margin-bottom: 1.5rem;
 }
@@ -25,25 +25,32 @@
 
 .tags-container {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 0.5rem;
 }
 
-.tags-container .chip {
-    font-family: var(--font-monospace);
-    font-size: 0.6875rem;
+.tag-select {
     background-color: var(--tag-gray-bg);
     color: var(--text);
-    width: fit-content;
-    padding: 0.3125rem 0.625rem;
     border: 1px solid var(--border);
+    padding: 0.5rem;
     border-radius: 6px;
+    font-family: var(--font-monospace);
     cursor: pointer;
-    transition: 0.15s;
+    outline: none;
 }
 
-.chip.active {
-    background-color: var(--tag-blue-bg);
-    color: var(--accent-blue);
-    border: 1px solid var(--accent-blue);
+.tag-select:focus {
+    border-color: var(--accent-blue);
+}
+
+@media (max-width: 600px) {
+    .toolbar {
+        flex-direction: column;
+    }
+
+    .tags-container {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
