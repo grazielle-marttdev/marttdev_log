@@ -1,5 +1,21 @@
 [
     {
+        "id": "flexbox-propriedade-flex",
+        "date": "2026-06-02",
+        "title": "Flexbox: entendendo a propriedade flex e o shorthand que eu não dominava",
+        "tags": [
+            "css",
+            "flexbox",
+            "flex",
+            "shorthand",
+            "codequest",
+            "devquest",
+            "layout"
+        ],
+        "summary": "Durante um exercício de Flexbox no CodeQuest, me deparei com um código sugerido pela IA que eu não dominava: flex: 1 1 calc(50% - 12px). Fui entender o que significava, tirei a dúvida com a Agente Ana do DevQuest e cheguei a uma conclusão importante sobre como a propriedade flex realmente funciona.",
+        "content": "<p>Estava fazendo um exercício no CodeQuest — plataforma de exercícios do DevQuest — sobre Flexbox. O desafio era criar uma estrutura de página completa usando as propriedades <code>flex-direction</code>, <code>justify-content</code>, <code>align-items</code>, <code>align-content</code>, <code>flex-wrap</code> e <code>gap</code>.</p><p>As propriedades eu já conhecia. Mas durante a estilização, a IA do editor sugeriu um código que eu não dominava de verdade:</p><div class=\"terminal\"><div class=\"terminal-bar\"><div class=\"terminal-dot t-red\"></div><div class=\"terminal-dot t-yellow\"></div><div class=\"terminal-dot t-green\"></div><span class=\"terminal-title\">style.css</span></div><div class=\"terminal-body\"><div><span class=\"t-cmd\">flex: 1 1 calc(50% - 12px);</span></div></div></div><h2>// o que esse código significa</h2><p>Fui tirar a dúvida com a <strong>Agente Ana</strong> do DevQuest Agents — o que foi diferente pra mim, porque geralmente eu vou direto ao Claude ou às IAs integradas no VSCode. Foi uma boa mudança.</p><div class=\"callout blue\"><p>O <code>flex</code> é um <strong>shorthand</strong> (abreviação) para três propriedades, sempre nessa ordem:</p><ul><li><code>flex-grow</code> — define se o item pode <strong>crescer</strong> para ocupar espaço disponível</li><li><code>flex-shrink</code> — define se o item pode <strong>encolher</strong> quando o espaço é insuficiente</li><li><code>flex-basis</code> — define o <strong>tamanho inicial</strong> do item antes de crescer ou encolher</li></ul></div><p>Então <code>flex: 1 1 calc(50% - 12px)</code> significa: pode crescer, pode encolher, e começa com <code>calc(50% - 12px)</code> de largura.</p><h2>// por que o calc(50% - 12px)?</h2><p>Essa foi a parte mais interessante. Os cards estavam dentro de um contêiner com <code>gap: 12px</code>. Se o <code>flex-basis</code> fosse simplesmente <code>50%</code>, cada card tentaria ocupar metade da largura do contêiner — mas o <code>gap</code> entre eles adicionaria pixels extras, fazendo o total ultrapassar 100% e quebrando o layout.</p><p>Ao usar <code>calc(50% - 12px)</code>, você desconta exatamente o espaço que o <code>gap</code> ocupa, garantindo que dois cards caibam lado a lado sem ultrapassar a largura disponível.</p><h2>// a reflexão que ficou</h2><div class=\"quote-block\"><p>O <code>flex</code> é sempre aplicado nos <strong>itens filhos</strong>, nunca no contêiner pai. O que muda é o valor que você passa pra cada filho: se todos recebem o mesmo valor, eles crescem e encolhem de forma proporcional. Mas se você aplicar valores diferentes em cada filho, cada um vai se comportar de uma forma — um pode crescer mais, outro pode ter um tamanho base maior.</p></div>"
+    },
+    {
         "id": "ciberseguranca-primeiros-passos",
         "date": "2026-05-29",
         "title": "Cibersegurança: do interesse acadêmico à prática no terminal",
