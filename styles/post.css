@@ -104,7 +104,6 @@ main .post-content {
     padding: 1.25rem 1.5rem;
     background: var(--surface);
     border-radius: 0 8px 8px 0;
-    margin: 1.5rem 0;
 }
 
 .callout p {
@@ -178,7 +177,6 @@ main .post-content {
 .versus {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    margin: 2rem 0;
     border: 1px solid var(--border);
     border-radius: 10px;
     overflow: hidden;
@@ -247,7 +245,6 @@ main .post-content {
     border: 1px solid var(--border);
     border-radius: 8px;
     overflow: hidden;
-    margin: 2rem 0;
 }
 
 .terminal-bar {
