@@ -1,5 +1,21 @@
 [
     {
+        "id": "ia-copilotos-plano-estudos-fullstack",
+        "date": "2026-06-08",
+        "title": "IA nos estudos: copilotos e um plano de 30 dias gerado na prática",
+        "tags": [
+            "ia",
+            "copiloto",
+            "santander-2026",
+            "fullstack",
+            "prompt",
+            "claude",
+            "plano-de-estudos"
+        ],
+        "summary": "Continuando as aulas do Santander 2026 - AI React Front-end, chegamos ao segundo tipo de IA: os copilotos. Na prática, usei o Claude para gerar um plano de estudos de 30 dias em Full Stack — adaptando o prompt sugerido no repositório do curso e saindo com um PDF detalhado.",
+        "content": "<p>Dando continuidade às aulas do <strong>Santander 2026 - AI React Front-end</strong>, hoje chegamos ao segundo nível de IA apresentado no curso: os <strong>copilotos</strong>.</p><h2>// o conceito</h2><p>Se o chatbot é um consultor que você procura quando tem uma dúvida, o copiloto é um colega de trabalho sentado ao seu lado. Ele enxerga o que você está fazendo — seu código, seu documento, sua planilha — e sugere melhorias em tempo real, sem que você precise parar e perguntar.</p><div class=\"callout blue\"><p>Uma diferença importante em relação ao chatbot: enquanto o chatbot só conhece o que você digita na conversa, o copiloto pode acessar o <strong>contexto da ferramenta em que está integrado</strong>. No Google Docs, por exemplo, o Gemini pode usar arquivos do Drive e até e-mails do Gmail como referência — enriquecendo as sugestões com informações que já são suas.</p></div><p>Aquelas sugestões de código que surgem enquanto você está escrevendo no VSCode são um exemplo de copiloto.</p><h2>// na prática</h2><p>A proposta do repositório era usar o Gemini integrado ao Google Docs para transformar a área escolhida na aula anterior em um plano de estudos estruturado. Como não consegui usar o Gemini do Google Docs, fui direto ao Claude — e adaptei o prompt:</p><div class=\"terminal\"><div class=\"terminal-bar\"><div class=\"terminal-dot t-red\"></div><div class=\"terminal-dot t-yellow\"></div><div class=\"terminal-dot t-green\"></div><span class=\"terminal-title\">meu_prompt.txt</span></div><div class=\"terminal-body\"><div><span class=\"t-prompt\">></span> <span class=\"t-cmd\">Crie um plano de estudos de 30 dias para mim (formato PDF).</span></div><div><span class=\"t-cmd\">Área escolhida: Desenvolvimento Full Stack</span></div><div><span class=\"t-cmd\">Tópicos iniciais:</span></div><br><div><span class=\"t-cmd\">*&nbsp;Node.js + Express</span></div><div><span class=\"t-cmd\">*&nbsp;APIs REST na prática — com autenticação e tratamento de erros</span></div><div><span class=\"t-cmd\">*&nbsp;SQL mais a fundo — queries complexas, joins, índices</span></div><div><span class=\"t-cmd\">*&nbsp;Git além do básico — branches, pull requests, fluxo real de trabalho em time</span></div><div><span class=\"t-cmd\">*&nbsp;OWASP Top 10 — as 10 vulnerabilidades mais comuns em aplicações web</span></div><br><div><span class=\"t-cmd\">Estruture com:</span></div><div><span class=\"t-cmd\">-&nbsp;Meu objetivo</span></div><div><span class=\"t-cmd\">-&nbsp;Cronograma semanal (semanas 1 a 4) distribuindo os tópicos</span></div><div><span class=\"t-cmd\">-&nbsp;Materiais e referências por semana</span></div></div></div><p>O resultado foi um PDF com um plano detalhado: objetivo, cronograma dividido por semanas e dias, entregáveis práticos para cada tópico e materiais de referência por semana. Mesmo sem o contexto do Drive ou dos e-mails — que o Gemini teria acesso —, a resposta foi bem completa por conta do detalhamento que coloquei no prompt.</p><h2>// o que ficou</h2><p>A diferença entre chatbot e copiloto ficou mais clara na prática do que na teoria. O chatbot responde o que você pergunta. O copiloto age sobre o que você já está fazendo — e o quanto ele consegue ajudar depende diretamente de quanto contexto ele tem acesso.</p>"
+    },
+    {
         "id": "javascript-async-await-apis",
         "date": "2026-06-08",
         "title": "JavaScript assíncrono: async/await, fetch e o fim dos exercícios pendentes do CodeQuest",
