@@ -1,5 +1,21 @@
 [
     {
+        "id": "javascript-revisao-variaveis-tipos-primitivos",
+        "date": "2026-06-10",
+        "title": "Revisão JS: variáveis, template literals e tipos primitivos — o que eu sabia e o que faltava",
+        "tags": [
+            "javascript",
+            "variáveis",
+            "template-literals",
+            "tipos-primitivos",
+            "typeof",
+            "revisão",
+            "devquest"
+        ],
+        "summary": "Primeiro dia do plano de revisão de JavaScript. Como já tinha familiaridade com os conceitos de hoje e de amanhã, juntei as duas revisões: variáveis, template literals e tipos primitivos. Usei um questionário gerado pela Agente Ana para revisar com perguntas e atividades práticas. Os exercícios ficaram registrados no repositório de revisão.",
+        "content": "<p>Hoje começou o plano de revisão de JavaScript, TypeScript e React que criei com a IA. Como os conceitos de hoje e de amanhã já eram familiares, juntei as duas revisões em um dia só. Usei um questionário gerado pela <strong>Agente Ana</strong> do DevQuest para revisar ativamente — respondendo definições antes de consultar qualquer coisa. Os exercícios práticos ficaram registrados no repositório <a href='https://github.com/grazielle-marttdev/revisando-conceitos-javascript-typescript' target='_blank'>revisando-conceitos-javascript-typescript</a>.</p><h2>// variáveis: var, let e const</h2><p>Sabia que <code>let</code> pode ser reatribuído e <code>const</code> não. Sabia que <code>var</code> também pode ser reatribuído, mas não é mais usado — tem a ver com versões antigas do JavaScript. O que eu não lembrava bem era a diferença de <strong>escopo</strong> entre os três.</p><p><strong>Minha definição antes de revisar:</strong> escopo é quando uma variável pode ser acessada. Mas não lembrava a diferença entre os três tipos.</p><div class=\"callout blue\"><p><strong>Definição correta:</strong></p><ul><li><code>var</code> tem <strong>escopo de função</strong> — se declarada dentro de uma função, só pode ser acessada ali. Se declarada fora, é global.</li><li><code>let</code> e <code>const</code> têm <strong>escopo de bloco</strong> — só podem ser acessadas dentro do bloco onde foram declaradas, como dentro de um <code>if</code> ou de um loop.</li></ul></div><h2>// template literals</h2><p>Esse eu já dominava bem. Template literals têm a ver com <strong>interpolação de strings</strong> — uma forma mais limpa de juntar texto e variáveis do que a concatenação com <code>+</code>.</p><div class=\"terminal\"><div class=\"terminal-bar\"><div class=\"terminal-dot t-red\"></div><div class=\"terminal-dot t-yellow\"></div><div class=\"terminal-dot t-green\"></div><span class=\"terminal-title\">exemplo_strings.js</span></div><div class=\"terminal-body\"><div><span class=\"t-output\">// Concatenação (antiga)</span></div><div><span class=\"t-cmd\">\"Olá, \" + nome + \"! Seja bem-vindo(a)!\"</span></div><br><div><span class=\"t-output\">// Interpolação (template literal)</span></div><div><span class=\"t-cmd\">`Olá, ${nome}! Seja bem-vindo(a)!`</span></div></div></div><p>Variáveis sempre ficam dentro de <code>${}</code>, e o texto sempre usa crases (<code>``</code>) em vez de aspas.</p><h2>// tipos primitivos</h2><p>Sabia a maioria. O que faltava era a definição precisa de <code>undefined</code> e a curiosidade do <code>typeof null</code>.</p><ul><li><code>string</code> — qualquer valor entre aspas é texto: <code>\"1\"</code>, <code>\"texto\"</code>, <code>\"true\"</code></li><li><code>number</code> — valores numéricos: <code>12</code>, <code>-4</code>, <code>0</code></li><li><code>boolean</code> — só dois valores possíveis: <code>true</code> ou <code>false</code>. Muito usado em condicionais</li><li><code>null</code> — ausência <strong>intencional</strong> de valor. Você declara e propositalmente não atribui nada</li><li><code>undefined</code> — variável declarada mas <strong>não inicializada</strong>. É diferente de null: null é uma escolha, undefined é uma ausência não resolvida</li><li><code>symbol</code> — representa um valor único e imutável. Frequentemente usado para criar identificadores únicos em propriedades de objetos</li></ul><p>O operador <code>typeof</code> retorna o tipo de uma variável como string. Útil para depuração e verificações em tempo de execução.</p><div class=\"callout\"><p><strong>Curiosidade que vale lembrar:</strong> <code>typeof null</code> retorna <code>\"object\"</code> — não <code>\"null\"</code>. Isso é um bug histórico do JavaScript que nunca foi corrigido por questões de compatibilidade com versões anteriores. <code>null</code> é um tipo primitivo, mas o operador o identifica como objeto.</p></div>"
+    },
+    {
         "id": "ia-agentes-antigravity-workspace",
         "date": "2026-06-09",
         "title": "IA nos estudos: agentes, Antigravity IDE e um workspace gerado do zero",
@@ -8,7 +24,6 @@
             "agentes",
             "antigravity",
             "santander-2026",
-            "estudos",
             "workspace",
             "scudo",
             "devquest"
@@ -22,7 +37,7 @@
         "title": "IA nos estudos: copilotos e um plano de 30 dias gerado na prática",
         "tags": [
             "ia",
-            "copiloto",
+            "copilotos",
             "santander-2026",
             "fullstack",
             "prompt",
