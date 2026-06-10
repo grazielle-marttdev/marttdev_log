@@ -1,5 +1,19 @@
 [
     {
+        "id": "teste-inspecao-software-introducao",
+        "date": "2026-06-10",
+        "title": "Teste e Inspeção de Software: introdução, conceitos e por que isso importa",
+        "tags": [
+            "teste-de-software",
+            "inspeção-de-software",
+            "qualidade",
+            "QA",
+            "cosmos"
+        ],
+        "summary": "Primeira aula do curso livre 'Teste e Inspeção de Software: técnicas e automatização'. A introdução trouxe o contexto histórico da área, a diferença entre inspeção e teste de software, e por que essas práticas são cada vez mais relevantes no mercado.",
+        "content": "<p>Hoje comecei o curso livre <strong>Teste e Inspeção de Software: técnicas e automatização</strong> — um dos cursos bônus que ganhei da faculdade. A primeira aula foi uma introdução geral à área, com contexto histórico e os conceitos principais.</p><h2>// um pouco de história</h2><p>Antes da evolução da área, a verificação de software era algo bem básico: servia apenas para confirmar se um programa funcionava ou não. Em <strong>1957</strong>, passou-se a incluir a <strong>detecção de erros</strong> como parte do processo — e isso mudou a forma como a área se desenvolveu.</p><p>A partir daí, os testes deixaram de ser algo feito só no final do desenvolvimento e passaram a ser um <strong>processo contínuo</strong>, que acompanha todo o ciclo de vida de um software — do planejamento até a entrega.</p><h2>// inspeção vs. teste de software</h2><div class=\"versus\"><div class=\"versus-side red-side\"><div class=\"versus-label red\">Inspeção</div><ul class=\"versus-list\"><li>Técnica de revisão estática</li><li>Analisa o software sem executá-lo</li><li>Detecta defeitos nas fases iniciais</li><li>Revisão de requisitos e código</li></ul></div><div class=\"versus-divider\">vs</div><div class=\"versus-side blue-side\"><div class=\"versus-label blue\">Teste</div><ul class=\"versus-list\"><li>Técnica dinâmica</li><li>Software é executado</li><li>Assegura que requisitos foram atendidos</li><li>Testes funcionais, performance e segurança</li></ul></div></div><div class=\"callout blue\"><p>Em resumo: a <strong>inspeção</strong> encontra problemas no que foi planejado e escrito; o <strong>teste</strong> encontra problemas no que foi construído e executado. Usar os dois em conjunto gera uma abordagem muito mais eficaz.</p></div><h2>// o papel da equipe de desenvolvimento</h2><p>Teste e inspeção não são responsabilidade só de um time de QA separado — fazem parte de um processo maior de qualidade que envolve toda a equipe. Para isso funcionar bem, é preciso:</p><div class=\"callout\"><ul><li>Criar um <strong>planejamento adequado</strong> para cada fase</li><li>Entender as <strong>vantagens e desvantagens</strong> de cada método</li><li>Combinar métodos para uma abordagem equilibrada</li></ul></div><h2>// por que isso é cada vez mais relevante</h2><div class=\"areas-grid\"><div class=\"area-card\"><div class=\"area-card-label blue\">Demanda</div><h4>Contexto de Mercado</h4><p>A transformação digital e a integração de apps no cotidiano exigem software mais robusto, seguro e com alta performance.</p></div><div class=\"area-card\"><div class=\"area-card-label red\">Negócio</div><h4>Objetivo Claro</h4><p>Foco na satisfação do usuário, redução de falhas em produção e agilidade para acompanhar o mercado.</p></div></div>"
+    },
+    {
         "id": "antigravity-browser-api-restful",
         "date": "2026-06-10",
         "title": "Antigravity na prática: browser integrado e uma revisão de API RESTful",
@@ -37,7 +51,6 @@
             "agentes",
             "antigravity",
             "santander-2026",
-            "workspace",
             "scudo",
             "devquest"
         ],
@@ -52,7 +65,6 @@
             "ia",
             "copilotos",
             "santander-2026",
-            "fullstack",
             "prompt",
             "claude",
             "plano-de-estudos"
@@ -149,7 +161,6 @@
         "title": "IA no fluxo de trabalho: das 4 fases ao primeiro deploy",
         "tags": [
             "ia",
-            "ferramentas",
             "fluxo-de-trabalho",
             "devquest",
             "deploy"
