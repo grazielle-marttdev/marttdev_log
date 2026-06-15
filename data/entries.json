@@ -1,5 +1,20 @@
 [
     {
+        "id": "historia-ia-turing-eliza-llms",
+        "date": "2026-06-15",
+        "title": "Fundamentos da IA Moderna: como a inteligência artificial nasceu",
+        "tags": [
+            "ia",
+            "história",
+            "machine-learning",
+            "nlp",
+            "chatbot",
+            "santander-2026"
+        ],
+        "summary": "Primeira aula do curso 'Fundamentos da IA Moderna: Machine Learning, LLMs, IA Generativa e Agentes' do Santander 2026. O professor contou a história da inteligência artificial, desde Alan Turing até o ChatGPT, passando pelos primeiros chatbots e pelo surgimento dos modelos de linguagem.",
+        "content": "<p>Primeira aula do curso <strong>Fundamentos da IA Moderna: Machine Learning, LLMs, IA Generativa e Agentes</strong> do Santander 2026. O professor contou a história da inteligência artificial — como ela nasceu, quem foram os personagens principais e como chegamos nos modelos que usamos hoje.</p><h2>// os pioneiros</h2><p><strong>Alan Turing</strong> é considerado o pai da computação inteligente. Em 1950, ele propôs o famoso <em>Teste de Turing</em>:</p><div class=\"callout blue\"><p>Se uma máquina conseguisse conversar com um humano de forma indistinguível de outro humano, poderia ser considerada inteligente. Essa ideia plantou a semente do que viria a ser a IA.</p></div><p><strong>John McCarthy</strong> foi quem cunhou o termo <em>Inteligência Artificial</em> em 1956. Ele defendia que, para criar uma IA que se comportasse de forma parecida com um humano, seria necessário desenvolver sistemas de raciocínio extremamente complexos — algo que levaria décadas para começar a se tornar realidade.</p><h2>// os primeiros chatbots: Eliza vs Parry</h2><div class=\"versus\"><div class=\"versus-side red-side\"><div class=\"versus-label red\">Eliza (1966)</div><ul class=\"versus-list\"><li>Criada no MIT por Joseph Weizenbaum</li><li>Simulava uma sessão de psicoterapia (doutor)</li><li>Respondia perguntas com outras perguntas</li></ul></div><div class=\"versus-divider\">vs</div><div class=\"versus-side blue-side\"><div class=\"versus-label blue\">Parry (1972)</div><ul class=\"versus-list\"><li>Criado por Kenneth Colby</li><li>Simulava um paciente com paranoia esquizofrênica</li><li>Usado para treinamento na psiquiatria</li></ul></div></div><p>O que surpreendeu — e preocupou — Weizenbaum foi a reação das pessoas: com o tempo, elas passaram a tratar a Eliza como um ser humano de verdade, criando vínculos emocionais com o programa.</p><div class=\"callout orange\"><p>Weizenbaum ficou tão perturbado com isso que escreveu um livro criticando o uso irresponsável da IA. É um fenômeno que continua acontecendo hoje como, por exemplo, pessoas que tratam o ChatGPT como companheiro romântico, haha.</p></div><h2>// como a IA aprende: modelos de linguagem</h2><div class=\"callout blue\"><p>A IA não gera conhecimento do nada — ela precisa ser <strong>treinada</strong>. Quanto mais dados ela processa durante o treinamento, mais sofisticado se torna o <strong>modelo de linguagem</strong> (LLM) que é criado a partir disso. Uma tecnologia fundamental nesse processo é o <strong>PLN — Processamento de Linguagem Natural</strong>.</p></div><h2>// marcos mais recentes</h2><ul><li><strong>IBM Watson (2010)</strong> — Venceu campeões humanos no programa Jeopardy!. Um dos primeiros exemplos de PLN em larga escala.</li><li><strong>GPT-1 (2018)</strong> — Lançamento do primeiro modelo da série GPT pela OpenAI, baseado na arquitetura Transformer.</li><li><strong>ChatGPT (2022)</strong> — Tornou os modelos de linguagem acessíveis ao público em geral.</li></ul>"
+    },
+    {
         "id": "javascript-funcoes-declaradas-expressoes",
         "date": "2026-06-15",
         "title": "Revisão JS: funções declaradas vs expressões de função — e o detalhe do hoisting",
