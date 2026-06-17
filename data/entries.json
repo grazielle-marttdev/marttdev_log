@@ -1,5 +1,21 @@
 [
     {
+        "id": "ia-treinamento-tokens-llm-slm",
+        "date": "2026-06-15",
+        "title": "Fundamentos da IA Moderna: como uma IA é treinada — tokens, LLM e reforço positivo",
+        "tags": [
+            "ia",
+            "machine-learning",
+            "tokens",
+            "llm",
+            "slm",
+            "treinamento",
+            "santander-2026"
+        ],
+        "summary": "Continuando o curso 'Fundamentos da IA Moderna' do Santander 2026, entendi melhor como funciona o treinamento de uma IA: o que são tokens, como eles formam um modelo de linguagem, e como o reforço positivo expande o reconhecimento da IA com novos parâmetros.",
+        "content": "<p>Dando continuidade ao curso <strong>Fundamentos da IA Moderna</strong> do Santander 2026, essa aula foi sobre como uma IA é treinada — do zero até chegar a um modelo capaz de reconhecer padrões complexos.</p><h2>// do zero ao refinado</h2><p>No início do treinamento, a IA é basicamente 'burrinha': ela não sabe nada. Mas conforme vai recebendo dados e ganhando novos parâmetros, ela vai se tornando mais refinada e capaz. O treinamento é justamente esse processo de acúmulo e ajuste.</p><h2>// o que são tokens</h2><p>Tokens são <strong>parâmetros de reconhecimento</strong> — padrões que a IA aprende a associar a conceitos. Funcionam como um dicionário interno: em vez de guardar imagens ou arquivos, a IA guarda características abstratas extraídas do que foi mostrado a ela.</p><p>É a partir dos tokens que se forma o <strong>modelo de linguagem</strong> — a representação interna de como a IA entende o mundo, de forma parecida com que nós humanos nos comunicamos por meio de palavras e conceitos.</p><h2>// o exemplo da maçã</h2><p>Para entender na prática, pense no treinamento para reconhecer uma maçã.</p><p>Você mostra uma imagem de uma maçã e descreve como ela é. A IA <strong>não guarda a imagem</strong> — ela extrai tokens, padrões de reconhecimento: </p><ul><li><code>#quase-esférico</code></li><li><code>#possui-pedaço-de-caule-em-cima</code></li><li><code>#tons-de-vermelho</code></li><li><code>#fenda-superior</code></li></ul><p>Agora, se você mostrar uma segunda maçã fotografada de um ângulo diferente — mais inclinada pro lado — a IA talvez reconheça apenas 50% dos tokens que aprendeu. A fenda pode não aparecer tão claramente, o caule pode estar numa posição diferente. Com poucos tokens correspondendo, ela pode não ter certeza se aquilo é uma maçã.</p><h2>// reforço positivo</h2><p>É aqui que entra o <strong>reforço positivo</strong>: você confirma para a IA que sim, aquilo ainda é uma maçã. Com essa confirmação, ela expande seu modelo com novos tokens que cobrem variações que ela ainda não conhecia: </p><ul><li><code>#fenda-estar-de-qualquer-direção</code></li><li><code>#caule-estar-de-qualquer-direção</code></li><li><code>#pode-ou-não-ter-uma-folha-verde</code></li><li><code>#tons-de-amarelo</code></li><li><code>#tom-mais-claro-maçã-pode-estar-aberta</code></li></ul><p>Esses novos tokens ampliam a visão da IA, tornando o reconhecimento mais robusto e menos dependente de uma única perspectiva. É assim que ela aprende a generalizar — não decorando casos, mas acumulando padrões.</p><h2>// LLM vs SLM</h2><p>Quando uma IA acumula um volume muito grande de dados, parâmetros e vocabulário, ela se torna um <strong>LLM — Large Language Model</strong> (Grande Modelo de Linguagem). São modelos como o GPT, Claude e Gemini, treinados com bilhões de parâmetros e capazes de lidar com uma enorme variedade de assuntos.</p><p>Já o <strong>SLM — Small Language Model</strong> (Pequeno Modelo de Linguagem) é uma alternativa mais enxuta: a IA não precisa de bilhões de parâmetros nem saber sobre tudo. SLMs são treinados para domínios específicos, sendo mais leves e eficientes para tarefas bem definidas.</p>"
+    },
+    {
         "id": "historia-ia-turing-eliza-llms",
         "date": "2026-06-15",
         "title": "Fundamentos da IA Moderna: como a inteligência artificial nasceu",
