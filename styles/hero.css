@@ -4,6 +4,10 @@
     gap: 1rem;
     padding: 8.5rem 0 4.5rem;
     margin-bottom: 1rem;
-    color: var(--muted);
+    color: var(--text);
     border-bottom: 1px solid var(--border);
+}
+
+.hero p {
+    line-height: 1.75;
 }

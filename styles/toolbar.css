@@ -38,6 +38,17 @@
     font-family: var(--font-monospace);
     cursor: pointer;
     outline: none;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(111, 140, 255, 0.55) transparent;
+}
+
+.tag-select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tag-select::-webkit-scrollbar-thumb {
+    background: rgba(111, 140, 255, 0.55);
+    border-radius: 999px;
 }
 
 .tag-select:focus {
