@@ -1,4 +1,17 @@
-﻿[
+[
+    {
+        "id": "n8n-webhooks-http-requests",
+        "date": "2026-07-22",
+        "title": "N8N Fundamentos: Webhooks e HTTP Requests",
+        "tags": [
+            "n8n",
+            "automação",
+            "api",
+            "devquest"
+        ],
+        "summary": "Nesta última aula do módulo de Fundamentos N8N, foi apresentado o nó HTTP Request e como ele funciona com requisições API (GET, POST, etc). Também vimos como usar o nó Webhook como gatilho para receber os dados enviados via requisição POST.",
+        "content": "<p>Nesta aula, foi apresentado o nó <strong>HTTP Request</strong>. Vimos ele numa aula anterior, mas não tinha sido explicado como ele funciona.</p><p>Eu, por já conhecer o protocolo HTTP, sei mais ou menos como funciona. Ali você vai basicamente fazer requisições (um pedido) para uma API, e ela vai te retornar algo. Temos diversos métodos para fazer essas requisições:</p><ul><li>DELETE</li><li>GET</li><li>HEAD</li><li>OPTIONS</li><li>PATCH</li><li>POST</li><li>PUT</li></ul><p>O <strong>GET</strong> nos apresenta os dados da API, e nesse caso usando a <code>https://jsonplaceholder.typicode.com/users</code>. Ou seja, veremos os dados de cada usuário dessa API.</p><p>O <strong>POST</strong> já faz outra coisa: criar um novo dado. E para isso, pegamos o nó <strong>Webhook</strong>.</p><div class=\"terminal\"><div class=\"terminal-bar\"><div class=\"terminal-dot t-red\"></div><div class=\"terminal-dot t-yellow\"></div><div class=\"terminal-dot t-green\"></div><span class=\"terminal-title\">webhook_config</span></div><div class=\"terminal-body\"><div><span class=\"t-prompt\">1.</span> <span class=\"t-cmd\">Renomeamos o parâmetro Path para \"formulario-n8n\"</span></div><div><span class=\"t-prompt\">2.</span> <span class=\"t-cmd\">Copiamos a URL de produção (Production URL) e fomos no nó HTTP Request</span></div><div><span class=\"t-prompt\">3.</span> <span class=\"t-cmd\">Colamos essa url lá, onde antes tínhamos colocado a url da API jsonplaceholder. E deixamos o método como POST</span></div><div><span class=\"t-prompt\">4.</span> <span class=\"t-cmd\">Ativamos a opção \"Send Body\" que é para conseguirmos enviarmos os novos dados</span></div></div></div><p>E adicionamos os campos:</p><div class=\"terminal\"><div class=\"terminal-bar\"><div class=\"terminal-dot t-red\"></div><div class=\"terminal-dot t-yellow\"></div><div class=\"terminal-dot t-green\"></div><span class=\"terminal-title\">dados_enviados.json</span></div><div class=\"terminal-body\"><div><span class=\"t-cmd\">{</span></div><div><span class=\"t-cmd\">&nbsp;&nbsp;\"Nome\": \"Grazielle\",</span></div><div><span class=\"t-cmd\">&nbsp;&nbsp;\"Email\": \"grazielle@example.com\",</span></div><div><span class=\"t-cmd\">&nbsp;&nbsp;\"Telefone\": \"11999999999\"</span></div><div><span class=\"t-cmd\">}</span></div></div></div><p>Para ver esses dados, basta ir na opção <strong>Executions</strong>, no topo da tela, e selecionar o nó Webhook. Um detalhe é que para o fluxo rodar, você precisa publicá-lo (tornar ativo).</p><h2>// Webhook vs HTTP Request</h2><div class=\"versus\"><div class=\"versus-side blue-side\"><div class=\"versus-label blue\">Webhook</div><ul class=\"versus-list\"><li>Funciona como um gatilho</li><li>Espera por algo acontecer</li><li>Serve para <strong>receber</strong> os dados</li></ul></div><div class=\"versus-divider\">vs</div><div class=\"versus-side red-side\"><div class=\"versus-label red\">HTTP Request</div><ul class=\"versus-list\"><li>Executa uma ação ativa</li><li>Faz requisições (pedidos) para APIs</li><li>Serve para <strong>enviar</strong> ou buscar dados</li></ul></div></div><p>Essa foi a última aula do módulo de Fundamentos N8N do DevQuest.</p>"
+    },
     {
         "id": "n8n-nos-edit-fields-if-switch-filter",
         "date": "2026-07-21",
@@ -6,6 +19,7 @@
         "tags": [
             "n8n",
             "automação",
+            "api",
             "devquest"
         ],
         "summary": "Aula sobre os nós que controlam e modificam o fluxo de uma automação no N8N: Edit Fields para transformar dados, If para condições simples, Switch para múltiplos fluxos paralelos e Filter para filtrar itens. Quem entende lógica de programação pega bem como cada um funciona.",
@@ -14,7 +28,7 @@
     {
         "id": "n8n-formulario-gemini-gmail-workflow-completo",
         "date": "2026-07-20",
-        "title": "N8N: conectando formulário, Gemini e Gmail em um workflow completo",
+        "title": "N8N Fundamentos: conectando formulário, Gemini e Gmail em um workflow completo",
         "tags": [
             "n8n",
             "automação",
