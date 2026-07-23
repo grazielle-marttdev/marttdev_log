@@ -1,5 +1,17 @@
 [
     {
+        "id": "conhecendo-o-react-bibliotecas",
+        "date": "2026-07-22",
+        "title": "Conhecendo o React: o que são bibliotecas e por que usá-las",
+        "tags": [
+            "react",
+            "frontend",
+            "santander-2026"
+        ],
+        "summary": "Primeira aula do curso de React do Santander 2026. A aula apresentou o conteúdo que será abordado e explicou o conceito de bibliotecas de forma simples com uma analogia sobre móveis e casas. Vimos as vantagens e as desvantagens de utilizá-las nos projetos.",
+        "content": "<p>Finalmente, cheguei no cursinho que fala sobre o <strong>React</strong>! Como eu já estudei sobre ele no módulo de Fudamentos de React lá no DevQuest, vai ser fácil pegar os conceitos que forem sendo passados nas aulas.</p><p>Foi então apresentado o conteúdo que teremos nesse curso:</p><ul><li><strong>Bibliotecas vs Frameworks</strong> — entender a diferença entre essas duas coisas</li><li>Fundamentos do React</li><li>Evolução do React</li><li>Estrutura de funcionamento do React</li></ul><p>E temos alguns pré-requisitos para entender melhor esses conteúdos: saber lógica de programação, HTML e CSS, e JavaScript. Eu tenho um pouco de cada coisa.</p><h2>// Bibliotecas</h2><p>Na aula, a professora Michele (pela primeira vez guardei o nome de alguém das aulas 😅) fez uma analogia para explicar o que é uma biblioteca:</p><div class=\"quote-block\"><p>É como ir a uma loja de móveis, onde você pretende conseguir alguns móveis para preencher sua casa. Cada móvel é como se fosse uma função ou utilitário reutilizável que você pode chamar onde e quando precisar. E a casa é o seu projeto que já estava pronto.</p></div><p>Ou seja, uma biblioteca <strong>não dita o fluxo do seu programa</strong>, mas você sim. Você a utiliza conforme necessário. Alguns exemplos de uso:</p><ul><li>Efeitos sonoros para jogos</li><li>Formatação de datas</li><li>Formatação de dados (temperatura, imagens, áudios, vídeos, etc)</li><li>Desenvolvimento de aplicações front-end (Bootstrap, jQuery, React)</li></ul><div class=\"callout blue\"><p>O <strong>React é considerado uma biblioteca</strong>. Uma biblioteca é um conjunto de código pré-escrito, economizando tempo e esforço nos seus projetos. Ela possui classes, funções e métodos.</p></div><h2>// Por que usar vs Problemas</h2><div class=\"areas-grid\"><div class=\"area-card\"><div class=\"area-card-label green\">Vantagens</div><h4>Por que devemos usar bibliotecas?</h4><ul style=\"margin-top: 10px; padding-left: 20px;\"><li>Reutilização de código</li><li>Eficiência no desenvolvimento</li><li>Padrões de qualidade</li><li>Compatibilidade e manutenção</li><li>Especialização e domínio de problemas</li></ul></div><div class=\"area-card\"><div class=\"area-card-label red\">Desvantagens</div><h4>Quais problemas podemos ter?</h4><ul style=\"margin-top: 10px; padding-left: 20px;\"><li>Tamanho do código</li><li>Curva de aprendizado</li><li>Dependências e problemas de break-changes (risco de quebrar, incompatibilidade)</li><li>Limitações de personalização</li><li>Risco de impacto negativo de desempenho</li></ul></div></div>"
+    },
+    {
         "id": "n8n-webhooks-http-requests",
         "date": "2026-07-22",
         "title": "N8N Fundamentos: Webhooks e HTTP Requests",
