@@ -173,7 +173,6 @@ main .post-content {
     line-height: 1.6;
 }
 
-/* Comparativo Versus */
 .versus {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -182,7 +181,7 @@ main .post-content {
     overflow: hidden;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .versus { grid-template-columns: 1fr; }
     .versus-divider { padding: 0.5rem 0 !important; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 }
