@@ -1,8 +1,14 @@
+// Estado global - Controla a lógica de paginação
+let currentPage = 1;
+const itemsPerPage = 12;
+let currentEntries = [];
+
 async function initFeed() {
     const entries = await getEntries();
-    renderCards(entries);
+    currentEntries = entries;
     setupSearch(entries);
     setupFilter(entries);
+    renderPage();
 }
 
 function renderCards(entries) {
@@ -30,12 +36,15 @@ function setupSearch(entries) {
 
         const term = searchInput.value.toLowerCase().trim();
 
-        const filtered = entries.filter(entry => 
+        currentEntries = entries.filter(entry => 
             entry.title.toLowerCase().includes(term) ||
             entry.summary.toLowerCase().includes(term) ||
             entry.tags.some(tag => tag.toLowerCase().includes(term))
         );
-        renderCards(filtered);
+
+        // Reseta para a primeira página porque os resultados mudaram
+        currentPage = 1;
+        renderPage();
     });
 }
 
@@ -57,14 +66,64 @@ function setupFilter(entries) {
         const category = selectElement.value.toLowerCase();
 
         if (category === 'todas') {
-            renderCards(entries);
+            currentEntries = entries;
         } else {
-            const filtered = entries.filter(entry => 
+            currentEntries = entries.filter(entry => 
                 entry.tags.some(tag => tag.toLowerCase() === category)
             );
-            renderCards(filtered);
         }
+
+        currentPage = 1;
+        renderPage();
     });
+}
+
+function renderPage() {
+    // Calcula os índices baseados na página atual
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+
+    // Corta o array para pegar só os items desta página
+    const paginatedItems = currentEntries.slice(startIndex, endIndex);
+
+    // Renderiza os cards dessa página
+    renderCards(paginatedItems);
+
+    // Cria os botões de página
+    renderPaginationControls();
+}
+
+function renderPaginationControls() {
+    const container = document.getElementById('pagination-container');
+    container.innerHTML = '';
+
+    // Calcula o total de páginas
+    const totalPages = Math.ceil(currentEntries.length / itemsPerPage);
+
+    // Se tiver 1 página (ou zero resultados), não precisa mostrar os botões
+    if (totalPages <= 1) return;
+
+    for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement('button');
+        btn.textContent = i;
+
+        // Destaca o botão da página atual
+        if (i === currentPage) {
+            btn.classList.add('active');
+        }
+
+        // Evento de click para mudar de página
+        btn.addEventListener('click', () => {
+            currentPage = i;
+            renderPage();
+
+            // Faz o scrool voltar para o topo dos post suavemente
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        container.appendChild(btn);
+    }
+
 }
 
 initFeed();

@@ -1,6 +1,5 @@
 .toolbar {
     display: flex;
-    /* flex-direction: column; */
     gap: 0.75rem;
     margin-bottom: 1.5rem;
 }
@@ -64,4 +63,37 @@
         width: 100%;
         justify-content: space-between;
     }
+}
+
+/* Paginação */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pagination button {
+    background-color: var(--surface);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-family: var(--font-monospace);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+    border-color: var(--border-hover);
+    color: var(--text);
+}
+
+.pagination button.active {
+    background-color: var(--tag-blue-bg);
+    color: var(--text);
+    border-color: var(--accent-blue);
 }
